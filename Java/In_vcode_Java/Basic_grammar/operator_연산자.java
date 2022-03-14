@@ -47,6 +47,26 @@ public class operator_연산자 {
         double num5 = Math.pow(3.0, 20.0); // math라는 클레스에 있는 pow 거듭제곱 메소드    3의 20제곱을 a에 넣어줌
         System.out.println("3의 20제곱은 " + (int) num5 +"입니다!");  // 정수형으로 바꿔서 출력 
         
+
+
+
+
+        /*
+        연산자 추가 개념
+        i++와  ++i는 단수이 값을 증가시키려는 목적이라면 그 기능이 통일합니다.
+
+        100 < x < 200은 잘못된 표현 입니다. (100 < x) && (x < 200)로 표현하는 것이 올바른 연식 표현입니다
+        i++는 i+= 1과 동일한 표현입니다. 또한 i = i + 1과도 동일한 표현입니다. 모두 1만큼 증가시킨다는 의미를 가지고 있습니다.
+
+        */
+
+        int i = 20;
+        i++;
+        System.out.println(i);
+        i = i + 1;
+        System.out.println(i);
+        i += 1;
+        System.out.println(i);
     }
     // 반환형, 함수 이름, 매개 변수        함수는 이렇게 만듬         그리고 static (클레스 전반에 사용하는 함수)인걸 적어서 알려줘야함  다시말해 main메소드에서 이러한 함수를 사용하려면 붙여줘야함  
     static int MAX(int a, int b) {                                
